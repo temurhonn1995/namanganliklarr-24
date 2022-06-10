@@ -37,6 +37,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 *:focus {
   outline: 3px dotted #2959ce;
   outline-offset: 3px;
@@ -262,7 +266,283 @@ form {
 .show-case-img:hover {
   opacity: 0.8;
 }
+/* SITE-MAIN-CONTENT */
 
+.articles {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.articles-card {
+  width: 100%;
+  max-width: 392px;
+  margin-bottom: 10px;
+  padding: 20px 17px 15px 17px;
+  border-radius: 15px;
+}
+.articles-card:not(:nth-child(3n)) {
+  margin-right: 10px;
+}
+.articles-card-values {
+  background: #f6f6f6;
+}
+.articles-card-link {
+  display: inline-block;
+  text-decoration: none;
+}
+.articles-card-link:hover {
+  opacity: 0.8;
+}
+.articles-card-link:active {
+  opacity: 0.5;
+}
+.articles-card-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.articles-card-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4b4c;
+}
+.articles-card-img {
+  display: flex;
+  width: 360px;
+  height: 165px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.time-source {
+  display: flex;
+  align-items: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.soure-link {
+  display: inline-block;
+}
+.source {
+  color: #5e5f61;
+  margin-right: 10px;
+}
+.time-text {
+  color: #5e5f61;
+}
+/* notification-cta */
+.notification-cta {
+  margin-bottom: 60px;
+}
+.notification-cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fccba7;
+  max-width: 1050px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 24px 71px 24px 29px;
+}
+.notification-text {
+  width: 400px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #000000;
+  margin: 0px;
+}
+.notification-cta-btn {
+  text-decoration: none;
+  display: inline-block;
+  background: #f78b3b;
+  padding: 13px 30px;
+  border-radius: 10px;
+  color: #fff;
+}
+.notification-cta-btn:hover {
+  opacity: 0.7;
+}
+
+.notification-cta-btn:active {
+  opacity: 0.5;
+}
+/* GLOBAL-NEWS */
+.global-news {
+  margin-bottom: 100px;
+}
+.global-news-container {
+  display: flex;
+}
+.layout-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.layout-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 17px;
+}
+.global-news-card {
+  width: 100%;
+  max-width: 797px;
+  /* width: 797px; */
+  padding: 20px 17px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.global-news-card-value {
+  display: flex;
+  align-items: flex-start;
+  background: #f6f6f6;
+}
+.global-news-img {
+  display: flex;
+  width: 210px;
+  height: 165px;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+.global-news-content {
+}
+.global-nws-content-link {
+  display: inline-block;
+  text-decoration: none;
+}
+.global-news-content-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0px;
+}
+.global-news-content-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4b4c;
+}
+.time-source {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+.soure-link {
+  display: inline-block;
+}
+.layout-btn {
+  width: 100%;
+  text-align: center;
+  background: #f6f6f6;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-decoration: none;
+  display: inline-block;
+  color: #000000;
+  border-radius: 10px;
+}
+.layout-btn:hover {
+  opacity: 0.6;
+}
+.layout-2 {
+  width: 393px;
+  margin-left: 10px;
+  margin-top: 42px;
+}
+.general-news-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 0px;
+  cursor: pointer;
+}
+.general-news-heading:hover {
+  opacity: 0.8;
+}
+
+.general-news-heading:active {
+  opacity: 0.5;
+}
+.general-news-list {
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  border-radius: 15px;
+  padding: 17px 20px 0px 17px;
+  margin-bottom: 10px;
+}
+.general-news-list a {
+  text-decoration: none;
+  display: inline-block;
+}
+.general-news-item {
+  list-style: none;
+}
+.general-news-item:not(:first-child) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.general-news-item:not(:last-child, :first-child) {
+  border-bottom: 1px solid #d2d2d2;
+  padding-top: 20px;
+}
+.general-news-item-heading {
+  text-decoration: none;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  padding-bottom: 0;
+}
+.general-news-item-heading:hover {
+  opacity: 0.8;
+}
+
+.general-news-item-heading:active {
+  opacity: 0.4;
+}
+.general-news-banner-link {
+  display: flex;
+}
+.general-news-banner-img {
+  display: flex;
+  width: 393px;
+  height: 338px;
+}
 /* SITE-FOOTER */
 .site-footer {
   background: #7297ef;
@@ -302,6 +582,8 @@ form {
   font-size: 12px;
   line-height: 19px;
   color: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .site-footer-list {
   font-family: "Rubik";
@@ -315,6 +597,7 @@ form {
 }
 .site-footer-item {
   list-style-type: none;
+  margin-bottom: 20px;
 }
 .site-footer-item:hover {
   opacity: 0.8;
@@ -330,7 +613,7 @@ form {
 }
 .line {
   background: #7f7f7f;
-  height: 1px;
+  margin-bottom: 15px;
 }
 .site-footer-bottom {
   display: flex;
@@ -361,6 +644,8 @@ form {
 }
 .socials-img {
   display: flex;
+  width: 25px;
+  height: 25px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
