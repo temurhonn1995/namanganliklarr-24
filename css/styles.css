@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
+    url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
+    url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Bold.woff2") format("woff2"),
+    url("../fonts/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -9,6 +36,10 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+*:focus {
+  outline: 3px dotted #2959ce;
+  outline-offset: 3px;
 }
 
 body {
@@ -29,7 +60,6 @@ img {
   height: auto;
 }
 
-
 /* AUTOFILL-STYLES */
 /*input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -45,7 +75,6 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }*/
 
-
 /* PLACEHOLDER-STYLES */
 /*::-webkit-input-placeholder,
 ::-moz-placeholder,
@@ -54,7 +83,6 @@ select:-webkit-autofill:focus {
   color: rgba(52, 49, 61, 0.5);
   opacity: 1;
 }*/
-
 
 /* VISUALLY-HIDDEN */
 .visually-hidden {
@@ -68,29 +96,276 @@ select:-webkit-autofill:focus {
   overflow: hidden;
 }
 
-
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
-
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
 }
+.site-header-top-wrapper {
+  background: #f6f6f6;
+}
+.site-header-top-container {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header-logo-link {
+  display: flex;
+  padding: 9px 6px 8px 6px;
+  background: #fff;
+  border-radius: 7px;
+  margin-right: 35px;
+}
+.header-logo {
+  display: flex;
+}
+.header-logo:hover {
+  opacity: 0.8;
+}
+.header-logo:active {
+  opacity: 0.4;
+}
+.currency-wrapper {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  color: #a6a6a6;
+}
+.currency:not(:last-child) {
+  margin-right: 25px;
+}
+.currency-type {
+  color: #2959ce;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+}
+form {
+  position: relative;
+  margin-right: 25px;
+  display: inline-block;
+}
+.search-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  left: 15px;
+  top: 13px;
+  bottom: 12px;
+  cursor: pointer;
+}
+.search-input {
+  padding: 13px 20px 12px 41px;
+  border: 1px solid transparent;
+  border-radius: 60px;
+  background: #fff;
+  /* outline: none; */
+}
+.toggler {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  padding: 3px;
+  background: #dce6ff;
+  border-radius: 39px;
+}
+.toggler-item {
+  text-decoration: none;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 8px 7px 7px 7px;
+  color: #a6a6a6;
+}
+.toggler-item:hover {
+  background: #fff;
+  border-radius: 50%;
+}
+/* .toggler-item-active {
+  background: #fff;
+  border-radius: 50%;
+} */
+.btn {
+  text-decoration: none;
+  padding: 13px 20px;
+  border-radius: 10px;
+  background: #7296ec;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 500;
+  color: #ffff;
+}
+.header-btn:hover {
+  opacity: 0.8;
+}
+.header-btn:active {
+  opacity: 0.5;
+}
+/* SITE-HEADER-BOTTOM */
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+.sitenav {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #7f7f7f;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d1d1d1;
+  border-radius: 1px;
+  margin-bottom: 40px;
+}
+.sitenav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.sitenav-item {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.sitenav-link {
+  display: block;
+}
+.sitenav-item:hover {
+  opacity: 0.7;
+}
+.sitenav-item:active {
+  opacity: 0.5;
+}
+.show-case {
+  display: flex;
+}
+.show-case-img {
+  width: 1200px;
+  height: 128px;
+  cursor: pointer;
+}
+.show-case-img:hover {
+  opacity: 0.8;
+}
 
+/* SITE-FOOTER */
+.site-footer {
+  background: #7297ef;
+}
+
+.site-footer-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.site-footer-top {
+  width: 100%;
+  max-width: 998px;
+}
+.site-footer-logo {
+  display: flex;
+}
+.site-footer-logo:hover {
+  opacity: 0.8;
+}
+
+.site-footer-logo:active {
+  opacity: 0.5;
+}
+.site-footer-list-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.site-footer-text {
+  width: 229px;
+  margin-right: 203px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.site-footer-list {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.site-footer-list:not(:last-child) {
+  margin-right: 100px;
+}
+.site-footer-item {
+  list-style-type: none;
+}
+.site-footer-item:hover {
+  opacity: 0.8;
+}
+
+.site-footer-item:active {
+  opacity: 0.5;
+}
+.site-footer-link {
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+}
+.line {
+  background: #7f7f7f;
+  height: 1px;
+}
+.site-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 998px;
+}
+.site-footer-bottom-text {
+  margin-right: auto;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.socials-link {
+  display: inline-block;
+}
+.socials-link:not(:last-child) {
+  margin-right: 25px;
+}
+.socials-img {
+  display: flex;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
 }

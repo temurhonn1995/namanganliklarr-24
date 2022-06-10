@@ -1,19 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-
-
-  <script src="js/main.js"></script>
-</body>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-top-wrapper">
+        <div class="site-header-top-container container">
+          <a class="header-logo-link" href="#"
+            ><img
+              class="header-logo"
+              src="photos/logo.svg"
+              alt="logo"
+              width="264"
+              height="28"
+          /></a>
+          <div class="currency-wrapper">
+            <span class="currency"><b class="currency-type">$ </b>10137.2</span>
+            <span class="currency"><b class="currency-type">P </b>10137.2</span>
+          </div>
+          <form action="#">
+            <img
+              class="search-icon"
+              src="photos/search-svgrepo-com.svg"
+              alt="icon-search"
+              width="20"
+              height="20"
+            />
+            <input
+              class="search-input"
+              type="search"
+              placeholder="Поиск"
+              name="search"
+            />
+          </form>
+          <div class="toggler">
+            <a href="#" class="toggler-item toggler-item-active">УЗ</a>
+            <a href="#" class="toggler-item">РУ</a>
+          </div>
+          <a href="#" class="btn header-btn">Войти</a>
+        </div>
+      </div>
+      <div class="site-header-bottom">
+        <div class="container">
+          <nav class="sitenav">
+            <ul class="sitenav-list">
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#"></a>Главное
+              </li>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#"></a>Интересное
+              </li>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#"></a>Экономика
+              </li>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#"></a>Политика
+              </li>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#"></a>Общество
+              </li>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#"></a>Технологии
+              </li>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#"></a>Спорт
+              </li>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#"></a>Культура
+              </li>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#"></a>Происшествия
+              </li>
+              <li class="sitenav-item">
+                <a class="sitenav-link" href="#"></a>Наука
+              </li>
+            </ul>
+          </nav>
+          <article class="show-case">
+            <img
+              class="show-case-img"
+              src="photos/optimize.jpg"
+              srcset="photos/optimize.jpg 1x, photos/optimize@2x.jpg 2x"
+              alt="article"
+              width="1200"
+              height="128"
+            />
+          </article>
+        </div>
+      </div>
+    </header>
+    <footer class="site-footer">
+      <div class="container site-footer-container">
+        <div class="site-footer-top">
+          <a href="#"
+            ><img
+              class="site-footer-logo"
+              src="photos/logo-white.svg"
+              alt="logo"
+              width="264"
+              height="28"
+          /></a>
+          <div class="site-footer-list-wrapper">
+            <p class="site-footer-text">
+              Воспроизводство, копирование, использование информации с сайта
+              «NAMANGANLIKLAR24.UZ» возможно только с предварительного
+              письменного разрешения редакции.
+            </p>
+            <ul class="site-footer-list">
+              <li class="site-footer-item">
+                <a href="#" class="site-footer-link">Информация о сайте</a>
+              </li>
+              <li class="site-footer-item">
+                <a href="#" class="site-footer-link">Напишите нам</a>
+              </li>
+              <li class="site-footer-item">
+                <a href="#" class="site-footer-link">Реклама</a>
+              </li>
+              <li class="site-footer-item">
+                <a href="#" class="site-footer-link">Прислать новость</a>
+              </li>
+            </ul>
+            <ul class="site-footer-list">
+              <li class="site-footer-item">
+                <a href="#" class="site-footer-link"
+                  >Использование материалов</a
+                >
+              </li>
+              <li class="site-footer-item">
+                <a href="#" class="site-footer-link">Темы дня</a>
+              </li>
+              <li class="site-footer-item">
+                <a href="#" class="site-footer-link">Наша команда</a>
+              </li>
+            </ul>
+          </div>
+          <hr class="line" />
+        </div>
+        <div class="site-footer-bottom">
+          <p class="site-footer-bottom-text">
+            Наши <br />
+            социальные сети
+          </p>
+          <div class="socials">
+            <a href="#" class="socials-link"
+              ><img
+                class="socials-img"
+                src="photos/free-icon-facebook.svg"
+                width="25"
+                height="25"
+                alt="icon"
+            /></a>
+            <a href="#" class="socials-link"
+              ><img
+                class="socials-img"
+                src="photos/free-icon-instagram.svg"
+                width="25"
+                height="25"
+                alt="icon"
+            /></a>
+            <a href="#" class="socials-link"
+              ><img
+                class="socials-img"
+                src="photos/free-icon-telegram.svg"
+                width="25"
+                height="25"
+                alt="icon"
+            /></a>
+            <a href="#" class="socials-link"
+              ><img
+                class="socials-img"
+                src="photos/free-icon-youtube.svg"
+                width="25"
+                height="25"
+                alt="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
